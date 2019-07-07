@@ -1,11 +1,7 @@
 <template>
   <svg :width="width" :height="height">
     <g id="body">
-      <CarBody
-        :x="offsetX"
-        :y="offsetY"
-        :settings="settings.carBody"
-      />
+      <CarBody :x="offsetX" :y="offsetY" :settings="settings.carBody" />
     </g>
     <g id="wheel">
       <Wheel
@@ -89,4 +85,3 @@ export default {
   }
 };
 </script>
-

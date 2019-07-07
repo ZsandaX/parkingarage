@@ -1,7 +1,9 @@
 <template>
   <div class="parkingarage">
     <h1>這是一個停車場</h1>
-    <Car :settings="carSettings"/>
+    <div>
+      <Car :settings="carSettings" />
+    </div>
   </div>
 </template>
 <script>
@@ -15,21 +17,26 @@ export default {
   },
   data() {
     return {
-        carSettings: {
-            frontOverhang: 18,
-            rearOverhang: 20,
-            carBody: {
-                width: 40,
-                height: 95,
-                color: "#cccccc",
-            },
-            wheel:{
-                width: 4,
-                height: 10,
-                color: "#000000"
-            }
+      carSettings: {
+        frontOverhang: 18,
+        rearOverhang: 20,
+        carBody: {
+          width: 40,
+          height: 95,
+          color: "#cccccc"
+        },
+        wheel: {
+          width: 4,
+          height: 10,
+          color: "#000000"
         }
+      }
     };
   }
 };
 </script>
+<style>
+svg {
+  position: absolute;
+}
+</style>
